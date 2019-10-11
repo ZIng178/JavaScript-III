@@ -42,7 +42,7 @@ function CharacterStats(charAttributes){
 }
 CharacterStats.prototype= Object.create (GameObject.prototype);
 CharacterStats.prototype.takeDamage=function(){
-  console.log(`${this.name} took damge`);
+  return`${this.name} took damge`;
 }
 
 
@@ -59,7 +59,7 @@ function Humanoid (HumAttributes){
 CharacterStats.call(this,HumAttributes);
 this.team=HumAttributes.team;
 this.weapons=HumAttributes.weapons;
-this.langauge=HumAttributes.langauge;
+this.language=HumAttributes.language;
 }
 
 Humanoid.prototype =Object.create(CharacterStats.prototype);

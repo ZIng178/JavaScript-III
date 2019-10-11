@@ -68,12 +68,14 @@ sayName.call(Wangdi, langauges[0], langauges[1], langauges[2]);
 ////  The apply method allows you pass the array of the arguments and JavaScript automatically does the parsing for us .
 
 
-sayName.apply (Wangdi, langauges);
+sayName.apply(Wangdi, langauges);
 
 
 // The bind method return a new function istead of invoking the original function 
 
 var newFn =sayName.bind(Wangdi, langauges[0], langauges[1], langauges[2]);
+
+console.log(newFn());
 
 
 /*The .call and .aplly methods are very similar where the function is immediately invoked the only difference between the two 
